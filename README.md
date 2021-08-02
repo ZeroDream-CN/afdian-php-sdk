@@ -49,6 +49,21 @@ print_r($user);
 ```
 另外也可以直接查看 afdian.php，每个方法都写了详细的注释。
 
+## Redis Cache
+如需使用 Redis 缓存订单或赞助者信息，可以在 getAllOrders/getAllSponsors 的第二个参数填入以下格式内容：
+```
+&redis=服务器地址:端口
+```
+例如：
+```
+&redis=127.0.0.1:6379
+```
+
+## Server Return
+关于服务器返回的状态码以及更多信息，请查阅官方文档：
+
+https://afdian.net/dashboard/dev
+
 ## License
 本项目使用 MIT 协议开源
 
